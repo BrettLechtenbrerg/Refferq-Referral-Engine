@@ -7,6 +7,7 @@ const inter = Inter({ subsets: ["latin"] });
 export const metadata: Metadata = {
   title: "Refferq - Referral Engine",
   description: "Open-source referral and affiliate program management with GHL integration",
+  authors: [{ name: "Total Success AI" }],
 };
 
 export default function RootLayout({

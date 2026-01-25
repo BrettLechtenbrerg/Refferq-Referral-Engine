@@ -524,6 +524,16 @@ export default function GuidePage() {
           </div>
         </CardContent>
       </Card>
+
+      {/* Footer */}
+      <div className="text-center text-muted-foreground pt-8">
+        <p className="text-sm">
+          Part of <strong>The Master&apos;s Edge Business Program</strong> - Tier 3
+        </p>
+        <p className="text-xs mt-1">
+          © {new Date().getFullYear()} Total Success AI. All rights reserved.
+        </p>
+      </div>
     </div>
   );
 }
