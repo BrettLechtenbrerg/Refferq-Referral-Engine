@@ -17,6 +17,7 @@ import {
   ExternalLink,
   Target,
   TrendingUp,
+  Sparkles,
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import {
@@ -241,6 +242,49 @@ export function HelpButton() {
 
           {/* Scrollable Content */}
           <div className="overflow-y-auto flex-1 -mx-6 px-6 space-y-3">
+            {/* Welcome Section */}
+            <div className="rounded-xl border bg-gradient-to-br from-primary/5 to-primary/10 p-5">
+              <div className="flex items-start gap-4">
+                <div className="p-2.5 rounded-xl bg-primary/10 shrink-0">
+                  <Sparkles className="h-6 w-6 text-primary" />
+                </div>
+                <div className="space-y-3">
+                  <div>
+                    <h3 className="font-semibold text-lg">Welcome to Refferq!</h3>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      Your complete referral and affiliate program management system with native GHL integration.
+                    </p>
+                  </div>
+
+                  <div className="text-sm text-muted-foreground space-y-2">
+                    <p>
+                      <strong className="text-foreground">What it does:</strong>{" "}
+                      Refferq lets you create and manage a professional affiliate program—track referrals,
+                      calculate commissions, process payouts, and connect everything to your Go High Level workflows.
+                    </p>
+                    <p>
+                      <strong className="text-foreground">Why it matters:</strong>{" "}
+                      Referral programs generate 3-5x higher conversion rates than other channels.
+                      Word-of-mouth from affiliates and happy customers is your most cost-effective growth engine.
+                    </p>
+                    <p>
+                      <strong className="text-foreground">Example:</strong>{" "}
+                      Add an affiliate partner, they share their unique link, a customer signs up through GHL,
+                      the webhook fires, Refferq tracks the conversion, calculates a 20% commission, and queues the payout.
+                    </p>
+                  </div>
+
+                  <div className="pt-2 border-t border-primary/10">
+                    <p className="text-xs text-muted-foreground">
+                      <strong className="text-foreground">Part of The Master&apos;s Edge:</strong>{" "}
+                      Pairs with Competitor Intel to see what referral offers competitors are running,
+                      and CEO Dashboard to track your referral program&apos;s impact on overall revenue.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
             {steps.map((step) => {
               const isExpanded = expandedStep === step.number;
               const Icon = step.icon;
